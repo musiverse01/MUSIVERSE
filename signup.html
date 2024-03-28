@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Account</title>
+    
+    <style>
+       /* CSS code to center the sign-up form in the header */
+.user-registration {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.entry-title {
+    text-align: center;
+    color: #333;
+}
+
+
+        .ur-label {
+            font-weight: bold;
+        }
+
+        .ur-frontend-field {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .ur-submit-button {
+            background-color: #d24808;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .ur-submit-button:hover {
+            background-color: #d24808;
+        }
+
+        .ur-button-container a {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .ur-button-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="primary" class="content-area primary">
+        <main id="main" class="site-main">
+            <header class="entry-header ast-no-thumbnail ast-no-meta">
+                <h1 class="entry-title" itemprop="headline">Sign up</h1>
+            </header>
+            <div class="entry-content clear" itemprop="text">
+                <div class="user-registration ur-frontend-form ur-frontend-form--flat" id="user-registration-form-27906">
+                    <form method="post" class="register" data-form-id="27906" data-enable-strength-password="" data-minimum-password-strength="3" data-captcha-enabled="1" novalidate="novalidate">
+                        <div class="ur-form-row">
+                            <div class="ur-form-grid ur-grid-1">
+                                <div data-field-id="user_email" class="ur-field-item field-user_email">
+                                    <div class="form-row validate-required" id="user_email_field" data-priority="">
+                                        <label for="user_email" class="ur-label">Email <abbr class="required" title="required">*</abbr></label>
+                                        <span class="input-wrapper">
+                                            <input data-rules="" data-id="user_email" type="email" class="input-text input-email ur-frontend-field" name="user_email" id="user_email" placeholder="" value="" required="required" data-label="Email" fdprocessedid="0fl8hc">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div data-field-id="display_name" class="ur-field-item field-display_name">
+                                    <div class="form-row validate-required" id="display_name_field" data-priority="">
+                                        <label for="display_name" class="ur-label">Name <abbr class="required" title="required">*</abbr></label>
+                                        <span class="input-wrapper">
+                                            <input data-rules="" data-id="display_name" type="text" class="input-text input-text ur-frontend-field" name="display_name" id="display_name" placeholder="" value="" required="required" data-label="Name" fdprocessedid="n9x00a">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div data-field-id="user_pass" class="ur-field-item field-user_pass">
+                                    <div class="form-row validate-required hide_show_password" id="user_pass_field" data-priority="">
+                                        <label for="user_pass" class="ur-label">Password <abbr class="required" title="required">*</abbr></label>
+                                        <span class="input-wrapper">
+                                            <span class="password-input-group input-form-field-icons">
+                                                <input data-rules="" data-id="user_pass" type="password" class="input-text input-password ur-frontend-field" name="user_pass" id="user_pass" placeholder="" value="" required="required" data-label="Password" fdprocessedid="zj1k3p">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ur-recaptcha-node">
+                            <div id="node_recaptcha_register_user-registration-form-27906" class="cf-turnstile">
+                                <iframe src="https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/if/ov2/av0/rcv0/0/ls8np/0x4AAAAAAALQZkIbUEubtdMm/light/normal" allow="cross-origin-isolated; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups" id="cf-chl-widget-ls8np" tabindex="0" title="Widget containing a Cloudflare security challenge"></iframe>
+                                <input type="hidden" name="cf-turnstile-response" id="cf-chl-widget-ls8np_response" value="0.Wz8VrkKcsqqj2VaHOg3mDZ2ATXXxKq0hEtgS8myVsSskAAYqiqPIqjDJl92Igbkq332suOVlQhSZURIfFLLMO0H7CA6kaQV6_WP0KMxQ7becEcxV0VrNYwpIi4WZIE-OJB_QW59CNzx-bkoNPMUvsnDHRxB9_7BLh3Erp4xwsuJySm8LIeNTR9tmTcFoxAYPZlwp3c45eDVoCI-PwGorKI4heDRLMXt3Bqwf9LVQWs0bAW2WOS7UaSjfIqFyoVWdOuLW4eXyBnKKCTmXn_frXJRQPyjb4tzpZlVGAUhAgeuuZ9QTda5TqpqITUlAtbu-8ArJFTjlllaluZwvmxxNY5zaCNglCZWRQOd_uTC_i7WUqERRP3saGuDBAp3BTRHnH1hE64lNaYPcj-zngjHAFaWkXKuKz40SkiY6qqtNIw-w0ttskHtq_avwCOjBOQIDktelwZZqkpSjDGZO52wVVA.SUiob2FLnGEZqqA36cxCEQ.dd58b8691abe76269efea9fbbc88a8eeb8de34d9920439925d2481e33b81f3df">
+                            </div>
+                        </div>
+                        <div class="ur-button-container ">
+                            <button type="submit" class="btn button ur-submit-button" conditional_rules="" fdprocessedid="mguyxn">
+                                <span></span>
+                                Sign up
+                            </button>
+                            <a href="sucess.html"></a>
+                        </div>
+                        
+                        <input type="hidden" name="ur-user-form-id" value="27906">
+                        <input type="hidden" name="ur-redirect-url" value="https://www.musiverse.com/my-account/">
+                        <input type="hidden" id="ur_frontend_form_nonce" name="ur_frontend_form_nonce" value="32f1a9448f">
+                    </form>
+                    
+                </div>
+                </div>
+                </main>
+                </div>
+                </body>
+                </html>
+                
+                    
+                    
+                    
+                    
+                    
